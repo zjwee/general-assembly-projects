@@ -1,4 +1,4 @@
-,state,sat_participation,sat_ebraw,sat_math,sat_total,act_participation,act_english,act_math,act_reading,act_science,act_composite
+,state,sat_participation_2017,sat_ebraw_2017,sat_math_2017,sat_total_2017,act_participation_2017,act_english_2017,act_math_2017,act_reading_2017,act_science_2017,act_composite_2017
 0,Alabama,5,593,572,1165,100,18.9,18.4,19.7,19.4,19.2
 1,Alaska,38,547,533,1080,65,18.7,19.8,20.4,19.9,19.8
 2,Arizona,30,563,553,1116,62,18.6,19.8,20.1,19.8,19.7
@@ -19,7 +19,7 @@
 17,Kentucky,4,631,616,1247,100,19.6,19.4,20.5,20.1,20.0
 18,Louisiana,4,611,586,1198,100,19.4,18.8,19.8,19.6,19.5
 19,Maine,95,513,499,1012,8,24.2,24.0,24.8,23.7,24.3
-20,Maryland,69,536,52,1060,28,23.3,23.1,24.2,2.3,23.6
+20,Maryland,69,536,524,1060,28,23.3,23.1,24.2,23.8,23.6
 21,Massachusetts,76,555,551,1107,29,25.4,25.3,25.9,24.7,25.4
 22,Michigan,100,509,495,1005,29,24.1,23.7,24.5,23.8,24.1
 23,Minnesota,3,644,651,1295,100,20.4,21.5,21.8,21.6,21.5

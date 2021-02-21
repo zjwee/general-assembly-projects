@@ -37,3 +37,5 @@ States that do not have an existing SAT or ACT testing programme could be target
 |act_reading|float|ACT|Average ACT Reading scores for each state|
 |act_science|float|ACT|Average ACT Science scores for each state|
 |act_composite|float|ACT|Average ACT composite scores for each state|
+
+All features except 'state' will be appended with _2017 or _2018 depending on the year of the provided data

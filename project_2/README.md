@@ -2,34 +2,52 @@
 
 ## Problem Statement
 
-**Scenario**  
+**Scenario:**  
 Prospective Ames home buyers/sellers need an estimate of house prices given the features of the house.
 
 Home buyers will want to know if the house on sale is cheaper than other houses on the market with similar features.
 
 Home sellers will want to know what features of their house can be improved upon to raise its selling price.
 
-**Task**  
+**Task:**  
 Create a Linear Regression model to accurately predict house prices, given Ames housing [data](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt).
 
 Select 25-30 features out of 80, and refine model using cross validation and regularization.
 
-Final Linear Regression model will be tested against unseen test data on [Kaggle](https://www.kaggle.com/c/dsi-us-6-project-2-regression-challenge/overview) based on Root Mean Squared Error (RMSE) between predicted and actual sale prices.
+Test the final Linear Regression model against unseen test data on [Kaggle](https://www.kaggle.com/c/dsi-us-6-project-2-regression-challenge/overview) based on Root Mean Squared Error (RMSE) between predicted and actual sale prices.
 
 ## Executive Summary
 
-Out of the original 80 features, 30 features (inclusive of interaction features) were selected for the final Ridge Regression model.
+Out of the original 80 features, 30 categorical and numeric features were selected based on exploratory data analysis and iterative model generation/evaluation. Interaction features were then created based on these top 30 features.
 
-The model acheived RMSE of 29167 (Private Score) and 24979 (Public Score) on Kaggle.
+Out of all the interaction features generated above, the top 30 were selected for the final model. They include combinations of the following individual features:
+
+**Nominal:**<br>
+Bldg Type, Foundation, Neighborhood, Exterior 1st, Condition 1, Sale Type
+
+**Ordinal:**<br>
+Overall Qual, Overall Cond, Bsmt Exposure, BsmtFin Type 1, Kitchen Qual, Bsmt Qual, Fireplace Qu
+
+**Discrete:**<br>
+Year Built
+
+**Continuous:**<br>
+Gr Liv Area, Total Bsmt SF
+
+The final model is a Ridge Regression model optimized with cross validation, and it acheived RMSE of 29167 (Private Score) and 24979 (Public Score) on Kaggle.
+
+Prospective Ames home buyers/sellers should pay attention to Gr Liv Area, Total Bsmt SF, Overall Qual and Overall Cond as these features are highly correlated with Sale Price. Home buyers/sellers should expect house prices to be higher if these features' values are higher.
+
+Conversely, Condition 1: Artery (adjacency to an arterial street), BsmtFin Type 1: Unf (unfinished basement), and Fireplace Qu: NA (no fireplace) are negatively correlated with Sale Price. Sellers who wish to maximise their selling prices should be aware of these negative qualities of their house.
 
 ## Methodology
 
 1. Clean and explore data to select first set of features for modelling
-2. Split original training data into sub train/test sets
+2. Split original training data into sub train / test (holdout) sets
 3. Scale and binarize features as necessary
 4. Create Linear Regression model using first feature set
 5. Refine Linear Regression model using Ridge, Lasso and Elastic Net regression
-6. Score Linear Regression based on RMSE of cross validation and prediction of (sub) test dataset
+6. Score Linear Regression based on RMSE of cross validation and prediction of holdout test dataset
 7. Analyse results of regression models to fine-tune feature engineering and create new feature sets
 8. Repeat steps 4-7 on subsequent feature sets
 9. Select best performer for submission

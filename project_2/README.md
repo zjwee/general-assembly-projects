@@ -46,9 +46,9 @@ Conversely, Condition 1: Artery (adjacency to an arterial street), BsmtFin Type 
 2. Split original training data into sub train / test (holdout) sets
 3. Scale and binarize features as necessary
 4. Create Linear Regression model using first feature set
-5. Refine Linear Regression model using Ridge, Lasso and Elastic Net regression
+5. Regularize Linear Regression model using Ridge, Lasso and Elastic Net regression
 6. Score Linear Regression based on RMSE of cross validation and prediction of holdout test dataset
-7. Analyse results of regression models to fine-tune feature engineering and create new feature sets
+7. Analyse top coefficients of regression models to fine-tune feature engineering and create new feature sets
 8. Repeat steps 4-7 on subsequent feature sets
 9. Select best performer for submission
 

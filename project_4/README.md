@@ -1,5 +1,12 @@
 # **Project 4: West Nile Virus Prediction**
 
+## **Authors**
+
+- Geh Si Rong (Ted)
+- Lee Meng Chin
+- Teo Zhan Rui
+- Wee Zi Jian
+
 ## **Introduction**
 
 The West Nile virus (WNV) is a mosquito-borne illness that can cause severe neurological disease and death in humans. Originating from <a href="https://www.who.int/news-room/fact-sheets/detail/west-nile-virus">Uganda in 1937</a>,  the WNV's first recorded occurrence in the United States (US) was in New York City in 1999, and it has since spread across the entire nation to become the leading disease transmitted by mosquitoes in the US.
@@ -95,6 +102,6 @@ Overall, our findings show that the benefits of increasing pesticide spraying ma
 
 Our best performing model is SVM with a test accuracy score of 85.5%. Although accuracy provides an overview of the model's performance, we need to consider the other metrics to gain more meaningful insights to guide the decisions of the Chicago Department of Public Health.
 
-Other key metrics include the AUC, which shows that our model is 79.6% capable of distinguishing between WNV-positive and WNV-negative classes. We also note the recall rate which indicates that 80.7% of the actual WNV-positive cases were correctly classified.
+Other key metrics include the AUC, which shows that our model is 78.2% capable of distinguishing between WNV-positive and WNV-negative classes. We also note the recall rate which indicates that 79.8% of the actual WNV-positive cases were correctly classified.
 
 Based on these 3 metrics, we conclude that our model has performed relatively well in its classification of WNV-positive mosquitoes. This, in conjunction with the findings from the EDA and cost-benefit analysis, would help the Department of Public Health in making better decisions on when and where to spray pesticides to combat the spread of the WNV-virus.

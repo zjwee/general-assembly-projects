@@ -49,7 +49,7 @@ By taking the set union of various models, recall improved as the predictions fr
 
 By setting a soft distance threshold, precision improved as fewer excessive predictions were made.
 
-The final model using an ensemble of image and text embeddings achieved a train score of 0.783 and Kaggle test score of 0.728.
+The final model using an ensemble of image and text embeddings achieved a train score of 0.783 and [Kaggle test score of 0.728](https://www.kaggle.com/weezijian/ensemble-model).
 
 ## Data Dictionary
 
